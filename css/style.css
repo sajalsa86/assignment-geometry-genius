@@ -1,0 +1,37 @@
+body {
+    background-color: lightslategray;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card-img-top {
+    width: auto;
+    height: 150px;
+    margin-top: 25px;
+}
+
+.title-name {
+    font-weight: bold;
+    color: rgba(54, 18, 90, 0.836);
+    margin-top: 10px;
+
+}
+
+.input-group span {
+    padding: 8px;
+}
+
+.d-grid button {
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-variant: small-caps;
+}
+
+.card-body {
+    background: azure;
+}
