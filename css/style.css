@@ -32,6 +32,29 @@ body {
     font-variant: small-caps;
 }
 
-.card-body {
-    background: azure;
+.card:hover {
+    background-color: azure;
+    /* Default color when not hovering */
+}
+
+
+.myList p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: darkolivegreen;
+    display: none;
+
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .row-cols-md-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .row-cols-md-4 {
+        grid-template-columns: 1fr;
+    }
 }

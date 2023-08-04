@@ -14,19 +14,25 @@
 
 <body>
     <main class="container mt-5 mb-5">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
             <div class="col">
                 <div class="card h-100">
                     <img src="images/triangle.png" class="card-img-top img-fluid" alt="triangle">
                     <div class="card-body text-center">
                         <h4 class="title-name">Triangle</h4>
-                        <p>Area (A) = <span>0.5 * b * h</span></p>
+                        <p>Area (A) =
+                            <span>0.5</span> *
+                            <span id="triangle-base-element">b</span> *
+                            <span id="triangle-height-element">h</span>
+                        </p>
                         <div class="input-group">
-                            <input type="text" name="" id="" class="form-control" placeholder="Base"><span>cm</span>
-                            <input type="text" name="" id="" class="form-control" placeholder="Height"><span>cm</span>
+                            <input type="text" name="" id="triangle-base-field" class="form-control"
+                                placeholder="Base"><span>cm</span>
+                            <input type="text" name="" id="triangle-height-field" class="form-control"
+                                placeholder="Height"><span>cm</span>
                         </div>
                         <div class="d-grid">
-                            <button class="btn btn-primary mt-5" type="button">Calculate</button>
+                            <button id="triangle-btn" class="btn btn-primary mt-5" type="button">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -36,13 +42,18 @@
                     <img src="images/rectangle.png" class="card-img-top img-fluid" alt="rectangle">
                     <div class="card-body text-center">
                         <h4 class="title-name">Rectangle</h4>
-                        <p>Area (A) = <span>W * I</span></p>
+                        <p>Area (A) =
+                            <span id="rectangle-width-element"> W </span> *
+                            <span id="rectangle-length-element"> L </span>
+                        </p>
                         <div class="input-group">
-                            <input type="text" name="" id="" class="form-control" placeholder="W"><span>cm</span>
-                            <input type="text" name="" id="" class="form-control" placeholder="I"><span>cm</span>
+                            <input type="text" name="" id="rectangle-width" class="form-control"
+                                placeholder="W"><span>cm</span>
+                            <input type="text" name="" id="rectangle-length" class="form-control"
+                                placeholder="L"><span>cm</span>
                         </div>
                         <div class="d-grid">
-                            <button class="btn btn-primary mt-5" type="button">Calculate</button>
+                            <button id="rectangle-btn" class="btn btn-primary mt-5" type="button">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -52,13 +63,18 @@
                     <img src="images/parallelogram.png" class="card-img-top img-fluid" alt="parallelogram">
                     <div class="card-body text-center">
                         <h4 class="title-name">Parallelogram</h4>
-                        <p>Area (A) = <span>b * h</span></p>
+                        <p>Area (A) =
+                            <span id="parallelogram-base-element"> b </span> *
+                            <span id="parallelogram-height-element"> h </span>
+                        </p>
                         <div class="input-group">
-                            <input type="text" name="" id="" class="form-control" placeholder="Base"><span>cm</span>
-                            <input type="text" name="" id="" class="form-control" placeholder="Height"><span>cm</span>
+                            <input type="text" name="" id="parallelogram-base" class="form-control"
+                                placeholder="Base"><span>cm</span>
+                            <input type="text" name="" id="parallelogram-height" class="form-control"
+                                placeholder="Height"><span>cm</span>
                         </div>
                         <div class="d-grid">
-                            <button class="btn btn-primary mt-5" type="button">Calculate</button>
+                            <button id="parallelogram-btn" class="btn btn-primary mt-5" type="button">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -67,6 +83,19 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h3>Area Calculation:</h3>
+                        <article class="myList">
+                            <p id="visible-triangle">1. Triangle :
+                                <span id="triangle-calc-element"></span>
+                            </p>
+                            <p id="visible-rectangle">2. Rectangle :
+                                <span id="rectangle-calc-element"></span>
+                            </p>
+                            <p id="visible-parallelogram">3. Parallelogram : <span
+                                    id="parallelogram-calc-element"></span></p>
+                            <p id="visible-rhombus">4. Rhombus :<span id="rhombus-calc-element"></span> </p>
+                            <p>5. Pentagon : </p>
+                            <p>6. Ellipse : </p>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -76,15 +105,20 @@
                     <div class="card-body text-center">
                         <h4 class="title-name">Rhombus</h4>
                         <p>
-                            Area (A) = <span>0.5 * d<sub>1</sub> * d<sub>2</sub></span>
+                            Area (A) =
+                            <span>0.5 </span> *
+                            <span id="rhombus-base-element">d<sub>1 </sub></span> *
+                            <span id="rhombus-height-element">d<sub>2</sub></span>
                         </p>
                         <p><span>d<sub>1</sub> = 16cm</span> <span>d<sub>2</sub> = 8cm</span></p>
                         <div class="input-group">
-                            <input type="text" name="" id="" class="form-control" placeholder=""><span>cm</span>
-                            <input type="text" name="" id="" class="form-control" placeholder=""><span>cm</span>
+                            <input type="text" name="" id="rhombus-base" class="form-control"
+                                placeholder="p"><span>cm</span>
+                            <input type="text" name="" id="rhombus-height" class="form-control"
+                                placeholder="q"><span>cm</span>
                         </div>
                         <div class="d-grid">
-                            <button class="btn btn-primary mt-5" type="button">Calculate</button>
+                            <button id="rhombus-btn" class="btn btn-primary mt-5" type="button">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -126,14 +160,17 @@
         </div>
     </main>
 
-
     <!-- bootstrap js link here-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
     <!-- custom js -->
     <script src="js/utilitis.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/random-color.js"></script>
+    <script src="js/triangle.js"></script>
+    <script src="js/rectangle.js"></script>
+    <script src="js/parallelogram.js"></script>
+    <script src="js/rhombus.js"></script>
 
 </body>
 
