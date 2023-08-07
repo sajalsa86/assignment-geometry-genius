@@ -11,4 +11,5 @@ document.getElementById('rhombus-btn').addEventListener('click', function () {
     setTextElementById('rhombus-calc-element', rhombusResult);
     visibleListItem('visible-rhombus');
 
+
 });

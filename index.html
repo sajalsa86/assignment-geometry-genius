@@ -93,7 +93,7 @@
                             <p id="visible-parallelogram">3. Parallelogram : <span
                                     id="parallelogram-calc-element"></span></p>
                             <p id="visible-rhombus">4. Rhombus :<span id="rhombus-calc-element"></span> </p>
-                            <p>5. Pentagon : </p>
+                            <p id="visible-pentagon">5. Pentagon : <span id="pentagon-calc-element"></span></p>
                             <p>6. Ellipse : </p>
                         </article>
                     </div>
@@ -128,14 +128,21 @@
                     <img src="images/pentagon.png" class="card-img-top img-fluid" alt="pentagon">
                     <div class="card-body text-center">
                         <h4 class="title-name">Pentagon</h4>
-                        <p>Area (A) = <span>0.5 * p * b</span></p>
+                        <p>Area (A) =
+                            <span>0.5</span> *
+                            <span id="pentagon-p-element">p</span> *
+                            <span id="pentagon-b-element">b</span>
+
+                        </p>
                         <p>p = 6cm, b = 10cm</p>
                         <div class="input-group">
-                            <input type="text" name="" id="" class="form-control" placeholder="p"><span>cm</span>
-                            <input type="text" name="" id="" class="form-control" placeholder="b"><span>cm</span>
+                            <input type="text" name="" id="pentagon-p-field" class="form-control"
+                                placeholder="p"><span>cm</span>
+                            <input type="text" name="" id="pentagon-b-field" class="form-control"
+                                placeholder="b"><span>cm</span>
                         </div>
                         <div class="d-grid">
-                            <button class="btn btn-primary mt-5" type="button">Calculate</button>
+                            <button id="pentagon-btn" class="btn btn-primary mt-5" type="button">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -171,6 +178,8 @@
     <script src="js/rectangle.js"></script>
     <script src="js/parallelogram.js"></script>
     <script src="js/rhombus.js"></script>
+    <script src="js/pentagon.js"></script>
+
 
 </body>
 
